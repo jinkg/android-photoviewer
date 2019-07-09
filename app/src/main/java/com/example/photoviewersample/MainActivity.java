@@ -22,8 +22,7 @@ public class MainActivity extends Activity implements OnClickListener {
     public void onClick(View v) {
         final PhotoViewIntentBuilder builder =
                 Intents.newPhotoViewActivityIntentBuilder(this);
-        builder
-                .setPhotosUri("content://com.example.photoviewersample.SampleProvider/photos");
+        builder.setPhotosUri("content://com.example.photoviewersample.SampleProvider/photos");
 
         startActivity(builder.build());
     }
